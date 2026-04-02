@@ -26,11 +26,14 @@ All detail configuration of each devices are given in config/ folder.
 The network was  tested under three scenarios: Normal, High-load, and Failover.
 
 Normal Condition: Operated with optimal efficiency, maintaining 0-4ms latency and 0% packet loss.
+<img width="512" height="59" alt="unnamed" src="https://github.com/user-attachments/assets/facd9436-e843-4304-ad79-4d2f0d0cfb7a" />
+
 
 High-Load Condition: While FTP throughput decreased by ~41% (from 1.33 Mbps to 0.79 Mbps), critical services like VoIP and internal email remained  functional.
 
-Failover Recover: Perform good fault tolerance with a convergence time of  5 seconds when one Distribution switch fail , proving the effectiveness of the HSRP protocol.
 
+Failover Recover: Perform good fault tolerance with a convergence time of  5 seconds when one Distribution switch fail , proving the effectiveness of the HSRP protocol.
+<img width="512" height="165" alt="unnamed2" src="https://github.com/user-attachments/assets/d1e290a4-4133-4310-8f59-b3861fdc00d1" />
 
 
 For more detail result, check the doc/ folder
