@@ -2,7 +2,7 @@
 vtp mode server
 vtp domain USTH_Network
 
-! --- Config for port Uplink to Core switch ---
+! --- Config for interface Uplink to Core switch ---
 interface GigabitEthernet1/0/1
  description To Core1
  no switchport

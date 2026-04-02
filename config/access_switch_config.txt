@@ -2,17 +2,17 @@
 vtp mode client
 vtp domain USTH_Network
 
-! --- Normal port (For example, VLAN 10 Lecture Hall. Do the same for VLAN 20,30,...) ---
+! --- Normal interface (For example, VLAN 10 Lecture Hall. Do the same for VLAN 20,30,...) ---
 interface FastEthernet0/1
  switchport mode access
  switchport access vlan 10
 
-! --- Config for IP Phone with PC port (VLAN 60 for Voice service) ---
+! --- Config interface IP Phone with PC interface (VLAN 60 for Voice service) ---
 interface FastEthernet0/2
  switchport mode access
  switchport access vlan 40
  switchport voice vlan 60
 
-! --- Config on port connect to Distribution switch ---
+! --- Config interface connect to Distribution switch ---
 interface GigabitEthernet0/1
  switchport mode trunk

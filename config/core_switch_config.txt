@@ -1,0 +1,18 @@
+! --- Config Interface connect to Firewall (FW1) ---
+interface GigabitEthernet1/0/1
+ description To FW1
+ no switchport
+ ip address 10.0.1.2 255.255.255.252
+
+! --- Config Interface to Core 2 ---
+interface GigabitEthernet1/0/4
+ description To Core2
+ no switchport
+ ip address 10.0.3.1 255.255.255.252
+
+! ---  OSPF configuration  ---
+router ospf 1
+ network 10.0.1.0 0.0.0.3 area 0
+ network 10.0.3.0 0.0.0.3 area 0
+ network 10.1.1.0 0.0.0.3 area 0
+ network 10.1.3.0 0.0.0.3 area 0
