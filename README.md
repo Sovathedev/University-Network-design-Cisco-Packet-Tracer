@@ -14,6 +14,8 @@ Security: Cisco ASA 5506-X Firewalls, Access Control Lists (ACLs), Port Security
 
 Services: DHCP, DNS, FTP, Web, and VoIP (Cisco 2811).
 
+All detail configuration of each devices are given in config/ folder. 
+
 ## 📊 Performance & Evaluation
 The network was  tested under three scenarios: Normal, High-load, and Failover.
 
