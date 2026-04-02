@@ -24,7 +24,7 @@ High-Load Condition: While FTP throughput decreased by ~41% (from 1.33 Mbps to 0
 Failover Recover: Perform good fault tolerance with a convergence time of  5 seconds when one Distribution switch fail , proving the effectiveness of the HSRP protocol.
 
 ## 🚀 How to Run
-Step 1: Install Cisco Packet Tracer following instruction in install/.
+Step 1: Install Cisco Packet Tracer following instruction in install/ and download the University.pkt file.
 
 Step 2: Open University.pkt.
 
