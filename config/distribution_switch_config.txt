@@ -1,0 +1,40 @@
+! --- VTP config ---
+vtp mode server
+vtp domain USTH_Network
+
+! --- Config for port Uplink to Core switch ---
+interface GigabitEthernet1/0/1
+ description To Core1
+ no switchport
+ ip address 10.1.1.2 255.255.255.252
+!
+interface GigabitEthernet1/0/2
+ description To Core2
+ no switchport
+ ip address 10.1.2.2 255.255.255.252
+
+! ---  HSRP config for VLAN 10 ( Active group on Distribution switch 1) ---
+interface Vlan10
+ ip address 192.168.10.1 255.255.255.0
+ standby 10 ip 192.168.10.254
+ standby 10 priority 110
+ standby 10 preempt
+
+! ---  HSRP config for VLAN 20 (Standby group on Distribution switch 1) ---
+interface Vlan20
+ ip address 192.168.20.1 255.255.255.0
+ standby 20 ip 192.168.20.254
+ standby 20 priority 100
+ standby 20 preempt
+
+! --- OSPF configuration  ---
+router ospf 1
+ network 10.1.1.0 0.0.0.3 area 0
+ network 10.1.2.0 0.0.0.3 area 0
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 0
+ network 192.168.30.0 0.0.0.255 area 0
+ network 192.168.40.0 0.0.0.255 area 0
+ network 192.168.50.0 0.0.0.255 area 0
+ network 192.168.60.0 0.0.0.255 area 0
+ network 192.168.70.0 0.0.0.255 area 0

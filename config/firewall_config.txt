@@ -1,0 +1,21 @@
+! --- Define inside/outside network ---
+interface GigabitEthernet1/1
+ nameif inside
+ security-level 100
+ ip address 10.0.1.1 255.255.255.252
+
+interface GigabitEthernet1/2
+ nameif outside
+ security-level 0
+ ip address 203.0.113.2 255.255.255.252
+
+! --- Config Access Control List (ACL) ---
+! Block traffic from Guest VLAN (192.168.50.0) to Server VLAN (192.168.70.0)
+access-list INSIDE_TO_OUTSIDE deny ip 192.168.50.0 255.255.255.0 192.168.70.0 255.255.255.0
+access-list INSIDE_TO_OUTSIDE permit ip any any
+
+! Apply ACL for inside interface
+access-group INSIDE_TO_OUTSIDE in interface inside
+
+! --- Static route traffic for Internet ---
+route outside 0.0.0.0 0.0.0.0 203.0.113.1
