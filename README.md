@@ -11,7 +11,7 @@ This project simulates a university network architecture using the Cisco Packet 
 
 Architecture: Cisco 3-Layer Model (Core, Distribution, Access).
 
-Routing & High Availability: OSPF (dynamic routing), HSRP (gateway redundancy).
+Routing & High Availability: OSPF (dynamic routing) and HSRP (gateway redundancy).
 
 Switching & Segmentation: VLANs, VTP, STP, EtherChannel.
 
@@ -30,6 +30,8 @@ Normal Condition: Operated with optimal efficiency, maintaining 0-4ms latency an
 High-Load Condition: While FTP throughput decreased by ~41% (from 1.33 Mbps to 0.79 Mbps), critical services like VoIP and internal email remained  functional.
 
 Failover Recover: Perform good fault tolerance with a convergence time of  5 seconds when one Distribution switch fail , proving the effectiveness of the HSRP protocol.
+
+
 
 For more detail result, check the doc/ folder
 
