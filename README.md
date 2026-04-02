@@ -3,10 +3,13 @@
 ## 📖 Overview
 This project simulates a university network architecture using the Cisco Packet Tracer simulator. The design is based on the Cisco three-layer model, balancing the need for connectivity in academic/administrative operations and security.
 
-## 🛠️ Key Technologies & Protocols
-Architecture: Cisco 3-Layer Model (Core, Distribution, Access).
+<img width="1141" height="768" alt="image" src="https://github.com/user-attachments/assets/a736b95a-8625-421a-8ac7-5af91b962d20" />
 
-<img width="1997" height="874" alt="architechture" src="https://github.com/user-attachments/assets/d3c01acd-d6bc-4a85-98ee-a31601fe08b4" />
+
+## 🛠️ Key Technologies & Protocols
+<img width="1601" height="874" alt="architechture" src="https://github.com/user-attachments/assets/a975957e-68d9-4ce1-93be-4c5d24fc390d" />
+
+Architecture: Cisco 3-Layer Model (Core, Distribution, Access).
 
 Routing & High Availability: OSPF (dynamic routing), HSRP (gateway redundancy).
 
