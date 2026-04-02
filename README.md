@@ -6,6 +6,8 @@ This project simulates a university network architecture using the Cisco Packet 
 ## 🛠️ Key Technologies & Protocols
 Architecture: Cisco 3-Layer Model (Core, Distribution, Access).
 
+<img width="1997" height="874" alt="architechture" src="https://github.com/user-attachments/assets/d3c01acd-d6bc-4a85-98ee-a31601fe08b4" />
+
 Routing & High Availability: OSPF (dynamic routing), HSRP (gateway redundancy).
 
 Switching & Segmentation: VLANs, VTP, STP, EtherChannel.
