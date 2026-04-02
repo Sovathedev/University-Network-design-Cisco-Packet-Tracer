@@ -32,6 +32,10 @@ Normal Condition: Operated with optimal efficiency, maintaining 0-4ms latency an
 High-Load Condition: While FTP throughput decreased by ~41% (from 1.33 Mbps to 0.79 Mbps), critical services like VoIP and internal email remained  functional.
 
 
+<img width="512" height="174" alt="unnamed (1)" src="https://github.com/user-attachments/assets/91768122-aecd-45ac-9fab-877ddf4a9bb0" />
+
+
+
 Failover Recover: Perform good fault tolerance with a convergence time of  5 seconds when one Distribution switch fail , proving the effectiveness of the HSRP protocol.
 
 
