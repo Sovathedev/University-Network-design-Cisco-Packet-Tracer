@@ -49,4 +49,4 @@ Step 1: Install Cisco Packet Tracer following instruction in install/ and downlo
 
 Step 2: Open University.pkt.
 
-Step 3: Perform some ping test from the PC, or you can build your own network with the config given in config/.
+Step 3: Perform some ping test using the PC from any VLAN, first time test will need some time for PC to discover each other on network. You can also build your own network with the config given in config/.
