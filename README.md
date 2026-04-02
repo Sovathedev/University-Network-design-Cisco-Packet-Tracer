@@ -1,7 +1,7 @@
 # University-Network-design-Cisco-Packet-Tracer
 
 ## 📖 Overview
-This project simulates a university network architecture using the Cisco Packet Tracer simulation. The design is based on the Cisco three-layer model, balancing the need for connectivity in academic/administrative operations and security.
+This project simulates a university network architecture using the Cisco Packet Tracer simulator. The design is based on the Cisco three-layer model, balancing the need for connectivity in academic/administrative operations and security.
 
 ## 🛠️ Key Technologies & Protocols
 Architecture: Cisco 3-Layer Model (Core, Distribution, Access).
