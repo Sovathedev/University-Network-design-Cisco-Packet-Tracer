@@ -18,5 +18,7 @@ Failover Recover: Perform good fault tolerance with a convergence time of  5 sec
 
 ## 🚀 How to Run
 Step 1: Install Cisco Packet Tracer following instruction in install/.
+
 Step 2: Open University.pkt.
+
 Step 3: Check the config/ folder for specific CLI commands used on the Catalyst switches and ASA firewalls.
