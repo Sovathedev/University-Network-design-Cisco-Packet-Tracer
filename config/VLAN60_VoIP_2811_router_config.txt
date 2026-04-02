@@ -1,0 +1,35 @@
+! --- Config Interface connect to network (VLAN 60) ---
+! This interface will connect to Distribution Switch 1
+interface FastEthernet0/0
+ ip address 192.168.60.10 255.255.255.0
+ no shutdown
+
+! --- Config DHCP Server assign IP for IP Phone ---
+! Option 150 let IP Phone known the address of Telephone server
+ip dhcp pool VOICE_VLAN60
+ network 192.168.60.0 255.255.255.0
+ default-router 192.168.60.254
+ option 150 ip 192.168.60.10
+
+! --- (Telephony-Service) ---
+telephony-service
+ ! Restrict number of phone 
+ max-ephones 20
+ max-dn 20
+ ! Assign IP of router 2811 handle VoIP signal through port 2000
+ ip source-address 192.168.60.10 port 2000
+ ! Auto assign number for IP phone when they connect to the network
+ auto assign 1 to 20
+
+! --- (Directory Number) ---
+! Create number for Phone 1
+ephone-dn 1
+ number 1001
+
+! Create number for Phone 2
+ephone-dn 2
+ number 1002
+
+! Create number for Phone 3
+ephone-dn 3
+ number 1003
